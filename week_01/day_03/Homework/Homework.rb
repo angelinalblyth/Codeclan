@@ -23,3 +23,7 @@ p stops
 
 stops.delete_at(2)
 p stops
+
+#7. How many stops there are in the array?
+
+p stops.length
