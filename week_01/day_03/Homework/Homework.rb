@@ -32,3 +32,7 @@ p stops.length
 
 p stops[2]
 p stops[-4]
+
+#9. Reverse the positions of the stops in the array
+
+p stops.reverse!
