@@ -84,3 +84,7 @@ for numbers in even
     p numbers
   end
 end
+
+#7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+
+p users["Erik"][:lottery_numbers].push(7)
