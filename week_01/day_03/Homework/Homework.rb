@@ -4,3 +4,8 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Ha
 
 stops.push("Edinburgh Waverley")
 p stops
+
+#2. Add `"Glasgow Queen St"` to the start of the array
+
+stops.unshift("Glasgow Queen St")
+p stops
