@@ -37,3 +37,12 @@ united_kingdom << {
   :capital => "Belfast",
   }
 p united_kingdom
+
+
+
+# 3. Use a loop to print the names of all the countries
+# in the UK.
+
+for country in united_kingdom
+  puts country[:name]
+end
