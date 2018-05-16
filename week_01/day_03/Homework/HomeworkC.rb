@@ -26,3 +26,14 @@ united_kingdom = [
 
 united_kingdom[1][:capital] = 'Cardiff'
 p united_kingdom
+
+#2. Create a Hash for Northern Ireland and add it to
+# the `united_kingdom` array (The capital is Belfast,
+#   and the population is 1,811,000).
+
+united_kingdom << {
+  :name => "Northen Ireland",
+  :population => 1811000,
+  :capital => "Belfast",
+  }
+p united_kingdom
