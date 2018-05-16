@@ -75,3 +75,12 @@ p users["Avril"][:pets][0][:species]
 #5. Get the smallest of Erik's lottery numbers
 
 p users["Erik"][:lottery_numbers].min
+
+#6. Return an array of Avril's lottery numbers that are even
+even = users["Avril"][:lottery_numbers]
+
+for numbers in even
+  if numbers % 2 == 0
+    p numbers
+  end
+end
