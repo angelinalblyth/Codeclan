@@ -3,7 +3,7 @@ p "What number am I thinking of?"
 value = gets.chomp.to_i()
 
 while(value != my_number)
-  p "Nope, try again!"
+  #p "Nope, try again!"
   if value < my_number
     p "Too low"
   else
