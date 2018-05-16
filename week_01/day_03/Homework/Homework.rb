@@ -18,3 +18,8 @@ p stops.index("Linlithgow")
 
 stops.delete("Livingston")
 p stops
+
+#6. Delete `"Cumbernauld"` from the array by index
+
+stops.delete_at(2)
+p stops
