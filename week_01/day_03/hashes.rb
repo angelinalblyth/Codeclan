@@ -67,9 +67,26 @@
 # p meals[:breakfast]
 
 #another way to write symbols
+# countries = {
+#   uk: "London",
+#   germany: "Berlin",
+# }
+#
+# p countries
+
+
+#add arrays to symbols
 countries = {
-  uk: "London",
-  germany: "Berlin",
+  uk: {
+    capital: "London",
+    population: "10000"
+  },
+  germany: {
+    capital: "Berlin",
+    population: "40000"
+  }
 }
 
-p countries
+p countries[:germany][:population]
+
+ 
