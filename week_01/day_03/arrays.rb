@@ -31,30 +31,34 @@ my_array = Array.new()
 #
 # p fruits
 
-#add a item to the array
-fruits.push('pear')
+# #add a item to the array
+# fruits.push('pear')
+# p fruits
+#
+# # and then remove it
+# fruits.pop()
+# p fruits
+#
+# #another way to add something to the end of the array
+# fruits << 'lemon'
+# p fruits
+#
+#
+# fruits.shift()
+# p fruits
+#
+# fruits.unshift('apple')
+# p fruits
+#
+#
+# #Ruby takes both ints and strings into arrays
+# fruits_numbers_arr = ["apple", 1, 'orange', 5]
+# p fruits_numbers_arr
+#
+#
+# array_inception = [1,2,3,4,[5,6,7]]
+# p array_inception
+
+#sorts the array make sure to put !
+fruits.sort!()
 p fruits
-
-# and then remove it
-fruits.pop()
-p fruits
-
-#another way to add something to the end of the array
-fruits << 'lemon'
-p fruits
-
-
-fruits.shift()
-p fruits
-
-fruits.unshift('apple')
-p fruits
-
-
-#Ruby takes both ints and strings into arrays
-fruits_numbers_arr = ["apple", 1, 'orange', 5]
-p fruits_numbers_arr
-
-
-array_inception = [1,2,3,4,[5,6,7]]
-p array_inception
