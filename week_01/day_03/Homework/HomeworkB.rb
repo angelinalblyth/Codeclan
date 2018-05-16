@@ -71,3 +71,7 @@ p users["Erik"][:lottery_numbers]
 #4. Get the type of Avril's pet Monty
 
 p users["Avril"][:pets][0][:species]
+
+#5. Get the smallest of Erik's lottery numbers
+
+p users["Erik"][:lottery_numbers].min
