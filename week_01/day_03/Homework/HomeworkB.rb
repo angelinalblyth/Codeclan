@@ -92,4 +92,8 @@ p users["Erik"][:lottery_numbers].push(7)
 #8. Change Erik's hometown to Edinburgh
 
 p users["Erik"][:home_town] = "Edinburgh"
-p users
+
+
+#9. Add a pet dog to Erik called "Fluffy"
+
+p users["Erik"][:pets]<<{:name => 'Fluffy', :species => "dog"}
