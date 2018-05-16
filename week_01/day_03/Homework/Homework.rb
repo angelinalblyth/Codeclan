@@ -9,3 +9,7 @@ p stops
 
 stops.unshift("Glasgow Queen St")
 p stops
+
+#4. Work out the index position of `"Linlithgow"
+
+p stops.index("Linlithgow")
