@@ -35,4 +35,10 @@ p stops[-4]
 
 #9. Reverse the positions of the stops in the array
 
-p stops.reverse!
+p stops.reverse
+
+#10. Print out all the stops using a for loop
+
+for stop in stops
+  p stop
+end
