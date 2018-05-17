@@ -24,4 +24,4 @@ def remove_friend(person, name)
       [:friends].delete(name)
     end
   end
-end 
+end
