@@ -12,3 +12,16 @@ def likes_to_eat(person, food)
   end
   return false
 end
+
+def add_friend(person, name)
+  person[:friends].push(name)
+end
+
+
+def remove_friend(person, name)
+  for friend in person[:friends]
+    if friend == name
+      [:friends].delete(name)
+    end
+  end
+end 
