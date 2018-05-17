@@ -85,6 +85,14 @@ for numbers in even
   end
 end
 
+even_lottery_numbers = []
+for num in users["Avril"][:lottery_numbers]
+if num % 2 == 0
+ even_lottery_numbers.push(num)
+end
+end
+p even_lottery_numbers
+
 
 #7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 
