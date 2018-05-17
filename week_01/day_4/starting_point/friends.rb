@@ -25,3 +25,15 @@ def remove_friend(person, name)
     end
   end
 end
+
+def total_money(people)
+
+  total_money = 0
+
+  for money in people
+    total_money += money[:monies]
+  end
+
+  p total_money
+
+end
