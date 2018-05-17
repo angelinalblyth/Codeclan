@@ -32,12 +32,23 @@ p stops
 
 #7. How many stops there are in the array?
 
-p stops.length
+p stops.length()
+
+#Can also use stops.count()
 
 #8. How many ways can we return `"Falkirk High"` from the array?
 
 p stops[2]
-p stops[-4]
+p stops[-5]
+
+# Also
+#
+# my_stop = stops.slice(2)
+# p my_stop
+# p stops.fetch(2)
+# p stops.fetch(200) <- this will give an error
+# p stops.at(2)
+#TRY DOING A FOR LOOP FOR THIS! 
 
 #9. Reverse the positions of the stops in the array
 

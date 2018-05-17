@@ -38,6 +38,13 @@ united_kingdom << {
   }
 p united_kingdom
 
+#Use Push method to add Northern Ireland
+# united_kingdom.push({
+#   name: "Northern Ireland",
+#   population: 1811000,
+#   capital: "Belfast"
+#   })
+
 
 
 # 3. Use a loop to print the names of all the countries
@@ -46,6 +53,11 @@ p united_kingdom
 for country in united_kingdom
   puts country[:name]
 end
+
+#Another way to print the countries
+# for country in united_kingdom
+#   p "Country: #{country[:name]}"
+# end
 
 #4. Use a loop to find the total population of the UK.
 
@@ -56,3 +68,17 @@ for country in united_kingdom
 end
 
 p "The total population of the uk is " + total_population.to_s
+
+
+
+#Method to count populations
+#
+# def pop_count(array)
+#   total_pop = 0
+#   for country in array
+#     total_pop += country[:population]
+#   end
+#   return total_pop.to_s()
+# end
+#
+# p pop_count(united_kingdom)
