@@ -1,0 +1,18 @@
+Professional Development Award
+
+CC gives a level 8 SQA which equivalents to a HNC.
+
+
+Do this each Friday.
+
+Structure
+
+Analysis and Design
+Implementation and Testing
+Project
+
+Involves
+
+4x Multiple Choice tests
+2x Coding exercises
+Evidence Gathering for each unit
