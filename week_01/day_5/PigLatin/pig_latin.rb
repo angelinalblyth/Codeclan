@@ -19,7 +19,7 @@ def pigLatin(sentence)
   for word in splitSentence
     letters = word.split(//)
     first_letter = letters[0]
-    letters.shift().downcase
+    letters.shift()
     letters.push(first_letter)
     letters.push("ay ")
 
@@ -30,3 +30,18 @@ def pigLatin(sentence)
   result.capitalize!.chop!()
   return result
 end
+
+
+
+# "This is pig latin"
+# ["This", "is", "pig", "latin"]
+#
+# word = "This".split
+# letters = ["T", "h", "i", "s"]
+# first_letter = "T"
+# letters.shift = ["h", "i", "s"]
+# .push ["h", "i" "s", "T"]
+# .push("ay ") ["h", "i" "s", "T", "ay "]
+# .join "histay" -->>> this goes into result
+#
+# .capitalize "Histay "
