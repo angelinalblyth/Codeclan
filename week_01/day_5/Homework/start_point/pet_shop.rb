@@ -49,6 +49,19 @@ end
 
 # 10th Problem
 
+# def find_pet_by_name(shop, name)
+#
+#   pets = shop[:pets]
+#   for pet in pets
+#     if pet[:name] == name
+#       return pet
+#     end
+#   end
+#
+# end
+
+# 11th Problem
+
 def find_pet_by_name(shop, name)
 
   pets = shop[:pets]
@@ -57,5 +70,5 @@ def find_pet_by_name(shop, name)
       return pet
     end
   end
-
+  nil
 end
