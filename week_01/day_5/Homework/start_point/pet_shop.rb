@@ -107,5 +107,4 @@ end
 
 def customer_pet_count(customer)
   customer[:pets].length
-
 end
