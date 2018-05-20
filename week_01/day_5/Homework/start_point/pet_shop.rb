@@ -118,7 +118,7 @@ end
 
 # # OPTIONAL
 
-# 18th Problem
+# 18th and 19th Problem
 
 def customer_can_afford_pet(customer, new_pet)
   customer[:cash] >= new_pet[:price]

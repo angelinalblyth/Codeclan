@@ -173,11 +173,11 @@ class TestPetShop < Minitest::Test
     assert_equal(false, can_buy_pet)
   end
 
-  # def test_customer_can_afford_pet__sufficient_funds
-  #   customer = @customers[0]
-  #   can_buy_pet = customer_can_afford_pet(customer, @new_pet)
-  #   assert_equal(true, can_buy_pet)
-  # end
+  def test_customer_can_afford_pet__sufficient_funds
+    customer = @customers[0]
+    can_buy_pet = customer_can_afford_pet(customer, @new_pet)
+    assert_equal(true, can_buy_pet)
+  end
 
   # #These are 'integration' tests so we want multiple asserts.
   # #If one fails the entire test should fail
