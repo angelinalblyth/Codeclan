@@ -102,3 +102,10 @@ end
 def remove_customer_cash(customer, amount)
   customer[:cash] -= amount
 end
+
+# 16th Problem
+
+def customer_pet_count(customer)
+  customer[:pets].length
+
+end
