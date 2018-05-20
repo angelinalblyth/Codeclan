@@ -21,3 +21,9 @@ end
 def pets_sold(shop)
   shop[:admin][:pets_sold]
 end
+
+# 6th Problem
+
+def increase_pets_sold(shop,sold)
+  shop[:admin][:pets_sold] += sold
+end
