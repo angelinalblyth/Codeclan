@@ -73,7 +73,7 @@ def find_pet_by_name(shop, name)
   nil
 end
 
-# 12 Problem
+# 12th Problem
 
 def remove_pet_by_name(shop, name)
   pets = shop[:pets]
@@ -82,4 +82,11 @@ def remove_pet_by_name(shop, name)
        pets.delete(pet)
     end
   end
+end
+
+# 13th Problem
+
+def add_pet_to_stock(shop, new_pet)
+  pets = shop[:pets]
+  pets.push(new_pet)
 end
