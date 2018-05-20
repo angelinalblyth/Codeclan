@@ -9,3 +9,9 @@ end
 def total_cash(shop)
     shop[:admin][:total_cash]
 end
+
+# 3rd Problem
+
+def add_or_remove_cash(shop,amount)
+  shop[:admin][:total_cash] += amount
+end
