@@ -13,6 +13,13 @@ class TestLibrary < MiniTest::Test
      student_name: "Jeff",
      date: "01/12/16"
     }
+  },
+  {
+    title: "graceling",
+    rental_details: {
+      student_name: "Angelina",
+      date: "23/05/18"
+    }
   }
     ]
 
@@ -21,7 +28,7 @@ class TestLibrary < MiniTest::Test
   end
 
   def test_all_books
-    assert_equal(1, @library.all_books.length)
+    assert_equal(2, @library.all_books.length)
   end
 
   def test_book_titles
