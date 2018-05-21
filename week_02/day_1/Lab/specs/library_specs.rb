@@ -57,4 +57,8 @@ class TestLibrary < MiniTest::Test
       assert_equal([{title: "lord_of_the_rings",rental_details: {student_name: "Jeff",date: "01/12/16"}},{title: "graceling",rental_details: {student_name: "Angelina",date: "23/05/18"}},{title: "Bitterblue", rental_details:{ student_name: "", date: ""}}],result)
     end
 
+    def test_changing_rental_details
+
+    end
+
   end
