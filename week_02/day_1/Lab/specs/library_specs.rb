@@ -46,4 +46,9 @@ class TestLibrary < MiniTest::Test
     }, result)
   end
 
+  def test_get_rental_info
+    result = @library.rental_details("graceling")
+    assert_equal({student_name: "Angelina", date: "23/05/18"}, result)
+  end
+
 end

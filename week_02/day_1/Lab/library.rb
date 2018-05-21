@@ -23,4 +23,12 @@ class Library
     end
   end
 
+  def rental_details(title)
+    for book in @books
+      if (book[:title] == title)
+        return book[:rental_details]
+      end
+    end
+  end
+
 end
