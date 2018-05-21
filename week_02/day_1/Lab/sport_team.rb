@@ -16,4 +16,8 @@ class Team
     return @players
   end
 
+  def coach
+    return @coach
+  end
+
 end
