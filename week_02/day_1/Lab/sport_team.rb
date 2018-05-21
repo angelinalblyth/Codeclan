@@ -20,4 +20,9 @@ class Team
     return @coach
   end
 
+  def update_coach(new_coach)
+    @coach = new_coach
+  end
+
+
 end
