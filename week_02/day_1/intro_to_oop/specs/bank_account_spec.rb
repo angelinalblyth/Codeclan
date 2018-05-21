@@ -14,12 +14,12 @@ class TestBankAccount < MiniTest::Test
     #****encapsulation***
   end
 
-  def test_balance
+  def test_account_balance
     bank_account = BankAccount.new("Angelina", 500, "personal")
     assert_equal(500, bank_account.balance)
   end
 
-  def test_type
+  def test_account_type
     bank_account = BankAccount.new("Grant", 100, "personal")
     assert_equal("personal", bank_account.type)
   end
