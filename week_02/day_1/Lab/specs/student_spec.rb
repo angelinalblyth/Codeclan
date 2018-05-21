@@ -1,6 +1,6 @@
 require("minitest/autorun")
 require("minitest/rg")
-require_relative("../lab")
+require_relative("../Student")
 
 class TestStudent < MiniTest::Test
 
