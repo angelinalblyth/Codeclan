@@ -4,6 +4,10 @@
 # - Type (business, personal account)
 
 class BankAccount
+
+  attr_reader :holder_name, :balance, :type
+  attr_writer :holder_name, :balance, :type
+
   # Holder Name = John
   # Balance = 500
   # Type = business
@@ -13,28 +17,28 @@ class BankAccount
     @type = input_type
   end
 
-  def holder_name()
-    return @holder_name
-  end
-
-  def balance()
-    return @balance
-  end
-
-  def type()
-    return @type
-  end
-
-  def set_holder_name(new_name)
-    @holder_name = new_name
-  end
-
-  def set_account_balance(new_balance)
-    @balance = new_balance
-  end
-
-  def set_account_type(new_type)
-    @type = new_type
-  end
+  # def holder_name()
+  #   return @holder_name
+  # end
+  #
+  # def balance()
+  #   return @balance
+  # end
+  #
+  # def type()
+  #   return @type
+  # end
+  #
+  # def set_holder_name(new_name)
+  #   @holder_name = new_name
+  # end
+  #
+  # def set_account_balance(new_balance)
+  #   @balance = new_balance
+  # end
+  #
+  # def set_account_type(new_type)
+  #   @type = new_type
+  # end
 
 end

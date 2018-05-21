@@ -28,7 +28,7 @@ class TestBankAccount < MiniTest::Test
     # arrange
     bank_account = BankAccount.new("John", 500, "business")
     # act
-    bank_account.set_holder_name("John McC")
+    bank_account.holder_name = "John McC"
 
     # assert
     assert_equal("John McC", bank_account.holder_name)
@@ -36,13 +36,13 @@ class TestBankAccount < MiniTest::Test
 
   def test_set_account_balance
     bank_account = BankAccount.new("Angelina", 500, "personal")
-    bank_account.set_account_balance(10)
+    bank_account.balance = 10
     assert_equal(10, bank_account.balance)
   end
 
   def test_set_account_type
     bank_account = BankAccount.new("Grant", 100, "personal")
-    bank_account.set_account_type("business")
+    bank_account.type = "business"
     assert_equal("business", bank_account.type)
   end
 
