@@ -5,8 +5,10 @@
 
 class BankAccount
 
-  attr_reader :holder_name, :balance, :type
-  attr_writer :holder_name, :balance, :type
+
+  attr_accessor :holder_name, :balance, :type #Allows both reader & writer
+  # attr_reader :holder_name, :balance, :type #Gets things out of class
+  # attr_writer :holder_name, :balance, :type #Changes things in class
 
   # Holder Name = John
   # Balance = 500
