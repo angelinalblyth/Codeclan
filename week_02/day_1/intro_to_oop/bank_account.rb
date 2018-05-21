@@ -25,4 +25,16 @@ class BankAccount
     return @type
   end
 
+  def set_holder_name(new_name)
+    @holder_name = new_name
+  end
+
+  def set_account_balance(new_balance)
+    @balance = new_balance
+  end
+
+  def set_account_type(new_type)
+    @type = new_type
+  end
+
 end
