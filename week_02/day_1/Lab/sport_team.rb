@@ -24,5 +24,7 @@ attr_accessor :team_name, :players, :coach
   #   @coach = new_coach
   # end
 
-
+  def add_new_player(new_player)
+    return @players.push(new_player)
+  end
 end
