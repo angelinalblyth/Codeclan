@@ -31,4 +31,9 @@ class Library
     end
   end
 
+
+  def add_new_book(new_book)
+    @books.push(new_book)
+  end
+
 end

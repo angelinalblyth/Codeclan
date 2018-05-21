@@ -43,12 +43,18 @@ class TestLibrary < MiniTest::Test
         student_name: "Angelina",
         date: "23/05/18"
       }
-    }, result)
-  end
+      }, result)
+    end
 
-  def test_get_rental_info
-    result = @library.rental_details("graceling")
-    assert_equal({student_name: "Angelina", date: "23/05/18"}, result)
-  end
+    def test_get_rental_info
+      result = @library.rental_details("graceling")
+      assert_equal({student_name: "Angelina", date: "23/05/18"}, result)
+    end
 
-end
+    def test_add_new_book
+      new_book = {title: "Bitterblue", rental_details:{ student_name: "", date: ""}}
+      result = @library.add_new_book(new_book)
+      assert_equal([{title: "lord_of_the_rings",rental_details: {student_name: "Jeff",date: "01/12/16"}},{title: "graceling",rental_details: {student_name: "Angelina",date: "23/05/18"}},{title: "Bitterblue", rental_details:{ student_name: "", date: ""}}],result)
+    end
+
+  end
