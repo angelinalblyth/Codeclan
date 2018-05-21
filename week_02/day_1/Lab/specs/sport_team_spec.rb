@@ -5,7 +5,7 @@ require_relative("../sport_team")
 class TestSportTeam < MiniTest::Test
 
   def test_team_name
-    sports_team = Team.new("Barbreck", ["Angelina", "Louise", "Christy", "Alex"], "Abi")
+    sports_team = Team.new("Barbreck", ["Angelina", "Louise", "Christy", "Alex"], "Abi",)
     assert_equal("Barbreck", sports_team.team_name)
   end
 
@@ -15,12 +15,12 @@ class TestSportTeam < MiniTest::Test
   end
 
   def test_team_coach
-    sports_team = Team.new("Barbreck", ["Angelina", "Louise", "Christy", "Alex"], "Abi")
+    sports_team = Team.new("Barbreck", ["Angelina", "Louise", "Christy", "Alex"], "Abi",)
     assert_equal("Abi", sports_team.coach)
   end
 
   def test_set_new_coach
-    sports_team = Team.new("Barbreck", ["Angelina", "Louise", "Christy", "Alex"], "Abi")
+    sports_team = Team.new("Barbreck", ["Angelina", "Louise", "Christy", "Alex"], "Abi",)
     sports_team.coach = "Scott"
     assert_equal("Scott", sports_team.coach)
   end
@@ -44,9 +44,15 @@ class TestSportTeam < MiniTest::Test
   end
 
   def test_is_person_a_player__false
-    sports_team = Team.new("Barbreck", ["Angelina", "Louise", "Christy", "Alex"], "Abi")
+    sports_team = Team.new("Barbreck", ["Angelina", "Louise", "Christy", "Alex"], "Abi",)
     result = sports_team.is_a_player("Julie")
     assert_equal(false, result)
+  end
+
+  def test_team_won
+    sports_team = Team.new("Barbreck", ["Angelina", "Louise", "Christy", "Alex"], "Abi",)
+    sports_team.team_won("Win")
+    assert_equal(1, sports_team.points)
   end
 
 
