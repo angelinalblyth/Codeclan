@@ -26,4 +26,10 @@ class TestStudent < MiniTest::Test
     assert_equal("G7", student_account.student_name)
   end
 
+  def test_student_can_talk
+    student_account = Student.new("Angelina", "G6")
+    can_talk = student_account.student_can_talk("I can talk")
+    assert_equal("I can talk", can_talk)
+  end
+
 end

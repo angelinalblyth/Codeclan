@@ -21,4 +21,8 @@ class Student
     @student_cohort = new_cohort
   end
 
+  def student_can_talk(can_talk)
+    return can_talk
+  end
+
 end
