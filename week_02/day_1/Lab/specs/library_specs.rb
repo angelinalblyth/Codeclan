@@ -8,19 +8,19 @@ class TestLibrary < MiniTest::Test
 
     @books = [
       {
-    title: "lord_of_the_rings",
-    rental_details: {
-     student_name: "Jeff",
-     date: "01/12/16"
-    }
-  },
-  {
-    title: "graceling",
-    rental_details: {
-      student_name: "Angelina",
-      date: "23/05/18"
-    }
-  }
+        title: "lord_of_the_rings",
+        rental_details: {
+          student_name: "Jeff",
+          date: "01/12/16"
+        }
+      },
+      {
+        title: "graceling",
+        rental_details: {
+          student_name: "Angelina",
+          date: "23/05/18"
+        }
+      }
     ]
 
     @library = Library.new(@books)
@@ -34,12 +34,16 @@ class TestLibrary < MiniTest::Test
   def test_book_titles
     assert_equal("lord_of_the_rings", @library.book_title)
   end
-  #
-  # def test_book_rental_details
-  #   books = Library.new("lord-of-the-rings", "Jeff", "01/12/16")
-  #   assert_equal([:rental_details =>{:student_name =>"Jeff", :date =>"01/12/16"}], books.book_rental_details)
-  # end
 
-
+  def test_book_details
+    result = @library.book_details("graceling")
+    assert_equal({
+      title: "graceling",
+      rental_details: {
+        student_name: "Angelina",
+        date: "23/05/18"
+      }
+    }, result)
+  end
 
 end

@@ -15,24 +15,12 @@ class Library
     end
   end
 
-# define book_rental_details
-def book_rental_details
-
-end
-
-
-
-# def book_rental_details(title)
-#   book_details = []
-#   for book in [:title]
-#     if book == title
-#       book_details = [:rental_details]
-#     end
-#     return book_details
-#   end
-# end
-
-
-
+  def book_details(title)
+    for book in @books
+      if (book[:title] == title)
+        return book
+      end
+    end
+  end
 
 end
