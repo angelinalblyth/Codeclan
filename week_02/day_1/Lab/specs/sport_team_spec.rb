@@ -37,5 +37,11 @@ class TestSportTeam < MiniTest::Test
     assert_equal(["Angelina", "Louise", "Christy", "Alex", "Rachel"], new_player)
   end
 
+  def test_is_person_a_player
+    sports_team = Team.new("Barbreck", ["Angelina", "Louise", "Christy", "Alex"], "Abi")
+    player = sports_team.is_a_player("Louise")
+    assert_equal(true, player)
+  end
+
 
 end

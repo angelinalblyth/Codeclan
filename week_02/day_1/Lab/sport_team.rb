@@ -27,4 +27,12 @@ attr_accessor :team_name, :players, :coach
   def add_new_player(new_player)
     return @players.push(new_player)
   end
+
+  def is_a_player(name)
+    player_match = true
+ for player in [:players]
+   player_match = player if([:player] == name)
+ end
+ return player_match
+  end
 end
