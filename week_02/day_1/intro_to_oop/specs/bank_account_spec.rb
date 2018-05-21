@@ -11,9 +11,17 @@ class TestBankAccount < MiniTest::Test
     #and passing values into it
 
     assert_equal("John", bank_account.holder_name)
-    #****capsulation***
+    #****encapsulation***
+  end
+
+  def test_balance
+    bank_account = BankAccount.new("Angelina", 500, "personal")
     assert_equal(500, bank_account.balance)
-    assert_equal("business", bank_account.type)
+  end
+
+  def test_type
+    bank_account = BankAccount.new("Grant", 100, "personal")
+    assert_equal("personal", bank_account.type)
   end
 
 end
