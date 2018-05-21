@@ -5,7 +5,7 @@
 
 class BankAccount
 
-
+  #Only create the below attr's if it really is needed.
   attr_accessor :holder_name, :balance, :type #Allows both reader & writer
   # attr_reader :holder_name, :balance, :type #Gets things out of class
   # attr_writer :holder_name, :balance, :type #Changes things in class
@@ -42,5 +42,13 @@ class BankAccount
   # def set_account_type(new_type)
   #   @type = new_type
   # end
+
+  def pay_monthly_fee()
+    if @type == 'business'
+      @balance -= 50
+    else
+      @balance -= 10
+    end
+  end
 
 end
