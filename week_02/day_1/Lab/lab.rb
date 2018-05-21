@@ -25,4 +25,8 @@ class Student
     return can_talk
   end
 
+  def favourite_programming_language(lang)
+    return("My favourite language is #{lang}.")
+  end
+
 end
