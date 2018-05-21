@@ -1,0 +1,17 @@
+Classes
+
+
+can create a person Class
+
+- attributes (property a person has)
+  - Name
+  - Age
+  - Gender
+  - Hair Colour
+
+Then there are methods (behaviours)
+  - Walk()
+  -Talk()
+  -Eat()
+
+you can do the methods on the attributes
