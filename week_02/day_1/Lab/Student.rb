@@ -1,8 +1,8 @@
 class Student
 
-  def initialize(input_student_name, input_student_cohort)
-    @student_name = input_student_name
-    @student_cohort = input_student_cohort
+  def initialize(student_name, student_cohort)
+    @student_name = student_name
+    @student_cohort = student_cohort
   end
 
   def student_name()

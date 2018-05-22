@@ -22,8 +22,8 @@ class TestStudent < MiniTest::Test
 
   def test_update_student_cohort
     student_account = Student.new("Angelina", "G6")
-    student_account.update_student_name("G7")
-    assert_equal("G7", student_account.student_name)
+    student_account.update_student_cohort("G7")
+    assert_equal("G7", student_account.student_cohort)
   end
 
   def test_student_can_talk
