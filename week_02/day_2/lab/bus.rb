@@ -34,4 +34,8 @@ class Bus
     bus_stop.queue = []
   end
 
+  def empty()
+    @passengers.clear()
+  end
+
 end

@@ -8,8 +8,8 @@ require_relative("../bus")
 class BusStopTest < MiniTest::Test
 
   def setup
-    @person1 = Person.new("bob", 1)
-    @person2 = Person.new("bill", 1)
+    @person1 = Person.new("Bob", 20)
+    @person2 = Person.new("Bill", 30)
     @bus_stop = BusStop.new("name_of_stop")
     @bus = Bus.new(22, "Ocean Terminal")
   end
@@ -18,7 +18,7 @@ class BusStopTest < MiniTest::Test
     @bus_stop.add_person_to_stop(@person1)
     assert_equal(1, @bus_stop.queue.length)
   end
-  
+
   def test_pick_up_all_passengers
     @bus_stop.add_person_to_stop(@person1)
     @bus_stop.add_person_to_stop(@person2)
