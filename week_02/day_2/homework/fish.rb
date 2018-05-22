@@ -1,10 +1,9 @@
 class Fish
 
-  attr_accessor :name
+  attr_accessor :fish
 
-  def initialize(name)
-    @name = name
+  def initialize(fish)
+    @fish = fish
   end
-
 
 end
