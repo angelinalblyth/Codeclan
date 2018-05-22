@@ -6,7 +6,7 @@ require_relative("../river")
 class RiverTest < MiniTest::Test
 
   def setup
-    @river = River.new("Amazon")
+    @river = River.new("Amazon", ["Trout", "Salmon", "Hake"])
   end
 
   def test_river_has_name
