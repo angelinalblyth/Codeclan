@@ -31,9 +31,14 @@ class Library
     end
   end
 
-
   def add_new_book(new_book)
     @books.push(new_book)
+  end
+
+  def update_rental_details(title, student_name, date)
+    @library.book_title(title)[:rental_details][:student_name] = student_name
+    @library.book_title(title)[:rental_details][:date] = date
+
   end
 
 end
