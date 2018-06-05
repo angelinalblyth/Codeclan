@@ -1,0 +1,25 @@
+<h1>
+  Welcome to Code Clans Pizza Shop.
+</h1>
+
+<p>
+  Below you can Order yourself a pizza.
+</p>
+
+<div class="main-container">
+
+    <div class = 'pizza-orders'>
+
+      <div class='order'>
+        <% for order in @orders %>
+        <p>Name: <%= order.pretty_name() %></p>
+        <p>Order: <%= order.quantity %> X <%= order.topping %></p>
+        <p><a href = "/pizza-orders/<%= order.id%>">Show Order</a></p>
+        <% end %>
+      </div>
+
+    </div>
+
+</div>
+
+<a href="/pizza-orders/new"><input type="submit" name= "New Order" value="New Order" /></a>

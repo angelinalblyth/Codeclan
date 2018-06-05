@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: tahoma;
+  text-align: center;
+  margin: auto;
+  padding: 0.5%;
+}
+
+h1{
+  text-align: centre;
+}
+
+.pizza-orders{
+  background-color: #84DCC6;
+  color: #95A3B3;
+  border: 1px red dotted;
+}
+
+.order{
+  border: 3px red dotted;
+}
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+  display: block;
+  text-align: centre;
+  padding: 20px, 16px;
+  text-decoration: none;
+}
