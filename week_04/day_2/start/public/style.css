@@ -5,19 +5,30 @@
   margin: auto;
   padding: 0.5%;
 }
+body{
+  background-image: url('http://www.ginosdial-a-pizza.co.uk/upload/bg-pizza.jpg');
+  background-size: cover;
+}
+
+h1, p{
+  text-align: centre;
+  color: white;
+}
 
 h1{
-  text-align: centre;
+  text-shadow: 5px 5px #32312b;
 }
 
 .pizza-orders{
-  background-color: #84DCC6;
-  color: #95A3B3;
-  border: 1px red dotted;
+  color: white;
+  background: rgba(112, 128, 144, 0.8);
+  /* border: 1px red dotted; */
+  width: auto;
+  height: auto;
 }
 
 .order{
-  border: 3px red dotted;
+  /* border: 3px red dotted; */
 }
 
 nav {
@@ -34,6 +45,8 @@ nav a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  background-color: white;
+  border : 1px black;
 }
 
 a {
@@ -41,4 +54,9 @@ a {
   text-align: centre;
   padding: 20px, 16px;
   text-decoration: none;
+}
+
+.button{
+  border: 2px black solid;
+  width: 15em;
 }
