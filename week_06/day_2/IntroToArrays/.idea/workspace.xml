@@ -17,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="19" />
+              <caret line="16" column="19" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -60,7 +60,7 @@
       <file leaf-file-name="NumberList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/NumberList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
+            <state relative-caret-position="105">
               <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding>
                 <element signature="e#121#122#0" expanded="true" />
@@ -80,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/NumberListTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#251#252#0" expanded="true" />
@@ -124,8 +124,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -350,7 +350,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529396659038</updated>
-      <workItem from="1529399220744" duration="7103000" />
+      <workItem from="1529399220744" duration="7105000" />
     </task>
     <servers />
   </component>
@@ -384,7 +384,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7103000" />
+    <option name="totallyTimeSpent" value="7105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -399,7 +399,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32900944" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32900944" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -499,14 +499,14 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="19" />
+          <caret line="16" column="19" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/NumberListTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#251#252#0" expanded="true" />
@@ -521,7 +521,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NumberList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
+        <state relative-caret-position="105">
           <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding>
             <element signature="e#121#122#0" expanded="true" />

@@ -49,9 +49,7 @@ public class TestAirplane {
     @Test
     public void airplaneDeplane(){
         airplane.addPassenger(person);
-        airplane.addPassenger(person);
-        airplane.addPassenger(person);
-        airplane.deplane();
+        airplane.deplane(person);
         assertEquals(0, airplane.passengerCount());
     }
 
