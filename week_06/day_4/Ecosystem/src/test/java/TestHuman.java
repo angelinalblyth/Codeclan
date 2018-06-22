@@ -26,4 +26,9 @@ public class TestHuman {
     public void humanCanWalk() {
         assertEquals("Walks like a Badass", human.walk());
     }
+
+    @Test
+    public void humanCanEat(){
+        assertEquals("Nom nom nom", human.eat());
+    }
 }

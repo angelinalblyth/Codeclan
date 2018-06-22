@@ -16,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/InstructorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#881#882#0" expanded="true" />
@@ -370,7 +370,7 @@
       <option name="presentableId" value="Default" />
       <updated>1529571880755</updated>
       <workItem from="1529571882007" duration="3783000" />
-      <workItem from="1529577665861" duration="1271000" />
+      <workItem from="1529577665861" duration="1434000" />
     </task>
     <servers />
   </component>
@@ -404,7 +404,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5054000" />
+    <option name="totallyTimeSpent" value="5217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -594,7 +594,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/InstructorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#881#882#0" expanded="true" />

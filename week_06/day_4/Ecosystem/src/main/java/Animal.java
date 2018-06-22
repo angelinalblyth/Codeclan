@@ -24,8 +24,8 @@ public class Animal {
         this.colour = colour;
     }
 
-    public String eat(String food) {
-        return "Eating " + food;
+    public String eat() {
+        return "Nom nom nom";
     }
 
     public String breathe() {

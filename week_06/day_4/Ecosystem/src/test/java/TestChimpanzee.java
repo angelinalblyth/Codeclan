@@ -21,4 +21,9 @@ public class TestChimpanzee {
     public void chimpanzeeCanWalk() {
         assertEquals("Swings from trees", chimpanzee.walk());
     }
+
+    @Test
+    public void chimpanzeeCanTalk(){
+        assertEquals("ooh-ooh-ooh-eee-eee", chimpanzee.talk());
+    }
 }

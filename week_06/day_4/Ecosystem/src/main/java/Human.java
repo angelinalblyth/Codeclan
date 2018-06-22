@@ -8,6 +8,10 @@ public class Human extends Mammal{
         this.walk = walk;
     }
 
+    public String eat(){
+        return super.eat();
+    }
+
     public String walk() {
         return this.walk;
     }

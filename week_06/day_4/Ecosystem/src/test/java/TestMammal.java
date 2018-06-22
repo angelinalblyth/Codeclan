@@ -26,4 +26,5 @@ public class TestMammal {
     public void mammalHasTalk(){
         assertEquals("Meow", mammal.talk());
     }
+
 }
