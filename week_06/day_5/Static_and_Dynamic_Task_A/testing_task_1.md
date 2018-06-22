@@ -21,7 +21,7 @@ class CardGame
   end
 
 # There isnt a card name, only suit and value.
-# The return statement wont return the card name, it needs to be card1.suit
+# The return statement wont return the card name, it needs to be suit or value 
 # dif is incorrect, should be def
 # Extra end
 # also need a , between card1 and card2
