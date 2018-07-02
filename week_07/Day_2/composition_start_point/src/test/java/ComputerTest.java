@@ -1,10 +1,10 @@
+import Behaviours.IInput;
 import Behaviours.IOutput;
-import device_management.Computer;
-import device_management.Monitor;
-import device_management.Printer;
-import device_management.Speaker;
+import device_management.*;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.security.Key;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -12,11 +12,13 @@ import static org.junit.Assert.assertNotNull;
 public class ComputerTest {
     Computer computer;
     Monitor monitor;
+    Keyboard keyboard;
 
     @Before
     public void before() {
         monitor = new Monitor(22, 786432);
-        computer = new Computer(8, 512, monitor);
+        keyboard = new Keyboard("microsoft");
+        computer = new Computer(8, 512, monitor, keyboard);
     }
 
     @Test
@@ -35,6 +37,7 @@ public class ComputerTest {
         assertNotNull(outputDevice);
     }
 
+
     @Test
     public void canOutputData() {
         assertEquals("space invaders is now on screen", computer.outputData("space invaders"));
@@ -43,23 +46,31 @@ public class ComputerTest {
     @Test
     public void canOutputDataViaPrinter() {
         Printer printer = new Printer("Epson", "Stylus", 120, 4);
-        computer = new Computer(8, 512, printer);
+        computer = new Computer(8, 512, printer, keyboard);
         assertEquals("printing: space invaders", computer.outputData("space invaders"));
     }
 
     @Test
     public void canOutputDataViaSpeaker() {
         Speaker speaker = new Speaker(100);
-        computer = new Computer(8, 512, speaker);
+        computer = new Computer(8, 512, speaker, keyboard);
         assertEquals("playing: Beep!", computer.outputData("Beep!"));
     }
 
     @Test
     public void canUpdateOutputDevice() {
         Speaker speaker = new Speaker(100);
-        computer = new Computer(8, 512, speaker);
+        computer = new Computer(8, 512, speaker, keyboard);
         Printer printer = new Printer("Epsom", "Stylus", 512, 4);
         computer.setOutputDevice(printer);
         assertEquals("printing: space invaders!", computer.outputData("space invaders!"));
     }
+
+    @Test
+    public void hasInPutDevice() {
+        IInput inputDevice = computer.getInputDevice();
+        assertNotNull(inputDevice);
+    }
+
+
 }

@@ -24,5 +24,9 @@ public class Mouse implements IInput {
         return "mouse: " + data;
     }
 
+    public String inputData(String data){
+        return this.sendData(data);
+    }
+
 
 }

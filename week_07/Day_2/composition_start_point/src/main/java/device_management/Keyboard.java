@@ -18,7 +18,7 @@ public class Keyboard implements IInput {
         return "typing: " + data;
     }
 
-    String outputData(String data){
-
+    public String inputData(String data){
+    return this.sendData(data);
     }
 }

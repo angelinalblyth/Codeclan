@@ -1,18 +1,20 @@
 package device_management;
 
+import Behaviours.IInput;
 import Behaviours.IOutput;
 
 public class Computer {
     private int ram;
     private int hddSize;
 
-    private Monitor monitor;
     private IOutput outputDevice;
+    private IInput inputDevice;
 
-    public Computer(int ram, int hddSize, IOutput outputDevice) {
+    public Computer(int ram, int hddSize, IOutput outputDevice, IInput inputDevice) {
         this.ram = ram;
         this.hddSize = hddSize;
         this.outputDevice = outputDevice;
+        this.inputDevice = inputDevice;
 
     }
 
@@ -35,4 +37,14 @@ public class Computer {
     public void setOutputDevice(IOutput outputDevice) {
         this.outputDevice = outputDevice;
     }
+
+    public IInput getInputDevice() {
+        return inputDevice;
+    }
+
+//
+//    public String inputData(String data){
+//        return this.inputDevice.inputData(data);
+//    }
+
 }
