@@ -42,21 +42,7 @@ public class DBGolfer {
         return results;
     }
 
-
-    public static Golfer find(int id){
-        Golfer result = null;
-        session = HibernateUtil.getSessionFactory().openSession();
-        try {
-            Criteria criteria = session.createCriteria(Golfer.class);
-            criteria.add(Restrictions.eq("id", id));
-            result = (Golfer) criteria.uniqueResult();
-        }catch (HibernateException e){
-            e.printStackTrace();
-        }finally {
-            session.close();
-        }
-        return result;
-    }
+=
 
     public static void delete(Golfer golfer){
         session = HibernateUtil.getSessionFactory().openSession();
