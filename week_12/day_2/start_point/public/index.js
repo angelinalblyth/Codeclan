@@ -16,6 +16,7 @@ var handleKeyPress = function(){
 }
 
 var handleSelectChanged = function(){
+  console.log(event);
   var pTag = document.querySelector('#select-result');
   pTag.innerText = this.value + ". Excellent!";
 }

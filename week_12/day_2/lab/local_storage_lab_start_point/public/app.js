@@ -21,10 +21,10 @@ var addItem = function (item) {
   // - create an li element containing the string 'item'
   // - append the li to the "todo-list" ul
 
-  var newItem = document.createElement('li');
+  var li = document.createElement('li');
   //console.log(newItem);
-  newItem.innerText = item;
-  ul.appendChild(newItem)
+  li.innerText = item;
+  ul.appendChild(li)
 }
 
 var handleButtonClick = function () {
@@ -39,6 +39,10 @@ var handleButtonClick = function () {
   addItem(inputValue);
   save(inputValue);
 
+  var jsonString = JSON.stringify(inputValue);
+
+  localStorage.setItem('inputValue', jsonString);
+
 
 }
 
@@ -47,20 +51,12 @@ var save = function (newItem) {
   // - get the data back from local storage and parse to an array
   // - add the newItem to the array
   // - stringify the updated array
-  // - save it back to localstoage
+  // - save it back to localstorage
 
-  var jsonString = JSON.stringify(newItem)
-  localStorage.setItem('item', jsonString);
-
-  // var jsonString = localStorage.getItem(newItem);
-  // var todoList = [];
-  // todoList.push(jsonString);
-
-
-
-
-
-
+  var todosArray = JSON.parse(localStorage.getItem('todoList')) || [];
+  todosArray.push(newItem);
+  var newArray = JSON.stringify(todosArray)
+  localStorage.setItem('todoList', newArray);
 
 }
 
