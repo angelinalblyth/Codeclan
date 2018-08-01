@@ -32,16 +32,28 @@ const populateList = function(countries){
     option.value = index;
     option.innerText = country.name;
     selectTag.appendChild(option);
-  })
+  });
+
+  var storedCountry = localStorage.getItem('selected_country');
+  var countryDetails = document.getElementById('countryDetails');
+  if(storedCountry){
+    countryToDisplay = JSON.parse(storedCountry);
+    console.log(storedCountry);
+    var pTag = document.createElement('p');
+    pTag.innerText = countryToDisplay.name;
+    countryDetails.appendChild(pTag);
+  }
+
 
 }
 
 const handleSelected = function(countries){
 
-  var selected = document.querySelector('select');
+  let selectTag = document.getElementById('countryDropdown');
 
-  selected.addEventListener('change', function(){
+  selectTag.addEventListener('change', function(){
     var country = countries[this.value];
+    // console.log(country);
     showCountryDetails(country);
   })
 };
@@ -52,7 +64,9 @@ const showCountryDetails = function(country){
   pTag.innerText = country.name;
   countryDetails.appendChild(pTag);
 
-  localStorage.setItem('CountryName', JSON.stringify(country.name));
+  var jsonString = JSON.stringify(country);
+  localStorage.setItem('selected_country', jsonString);
+
 }
 
 // const handleButtonClick = function(){
@@ -75,12 +89,14 @@ var app = function(){
   //   makeRequest(url, requestComplete )
   // }, {once: true})
 
-  var jsonString = localStorage.getItem('CountryName');
-  var lastSelectedCountry = JSON.parse(jsonString);
-  console.log(lastSelectedCountry);
+  // var jsonString = localStorage.getItem('CountryName');
+  // console.log(jsonString);
+  // var lastSelectedCountry = JSON.parse(jsonString);
+  // console.log(lastSelectedCountry);
+  // console.log(lastSelectedCountry);
 
-  if (!lastSelectedCountry) return;
-  showCountryDetails(lastSelectedCountry);
+  // if (!lastSelectedCountry) return;
+  // showCountryDetails(lastSelectedCountry);
 
 
 
