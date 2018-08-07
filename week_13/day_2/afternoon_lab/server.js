@@ -81,7 +81,7 @@ MongoClient.connect('mongodb://localhost:27017', function(err, client){
   });
 
   //Delete a tv show
-  server.delete('api/tvshows/:id', function(req, res){
+  server.delete('/api/tvshows/:id', function(req, res){
     const tvshowCollection = db.collection("tvshows");
     const objectID = ObjectID(req.params.id);
     const filterObject = {_id: objectID};
@@ -92,7 +92,7 @@ MongoClient.connect('mongodb://localhost:27017', function(err, client){
         res.send();
       }
       res.status(201);
-      res.json(result);
+      res.send();
     })
   });
 
@@ -106,7 +106,7 @@ MongoClient.connect('mongodb://localhost:27017', function(err, client){
         res.send();
       }
       res.status(201);
-      res.json(result);
+      res.send();
     })
   });
 
