@@ -33,6 +33,22 @@ MongoClient.connect('mongodb://localhost:27017', function(err, client){
     })
   });
 
+  //find a TV show
+  server.get('/api/tvshows/:id', function(req, res){
+    const tvshowCollection = db.collection("tvshows");
+    const objectID = ObjectID(req.params.id);
+    const filterObject = {_id: objectID};
+    tvshowCollection.findOne(function(err, oneShow){
+      if(err){
+        console.log(err);
+        res.status(500);
+        res.send();
+      }
+      res.status(201);
+      res.json(oneShow);
+    })
+  });
+
   //get all TV shows
   server.get('/api/tvshows', function(req, res){
     const tvshowCollection = db.collection("tvshows");
@@ -62,7 +78,7 @@ MongoClient.connect('mongodb://localhost:27017', function(err, client){
       res.status(201);
       res.json(result);
     })
-  })
+  });
 
   //Delete a tv show
   server.delete('api/tvshows/:id', function(req, res){
@@ -78,7 +94,7 @@ MongoClient.connect('mongodb://localhost:27017', function(err, client){
       res.status(201);
       res.json(result);
     })
-  })
+  });
 
   //Delete all tv shows
   server.delete('/api/tvshows', function(req, res){
@@ -92,7 +108,7 @@ MongoClient.connect('mongodb://localhost:27017', function(err, client){
       res.status(201);
       res.json(result);
     })
-  })
+  });
 
 
   server.listen(3000, function(){
